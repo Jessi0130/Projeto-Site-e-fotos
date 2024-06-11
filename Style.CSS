@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap');
+
+ /*font-family: "Yellowtail", cursive;
+font-family: "Roboto", sans-serif;
+font-family: "Roboto", sans-serif;
+font-family: "Nunito Sans", sans-serif;
+font-family: "Asap", sans-serif;*/
+
+
+ * {
+
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style: none;
+ }
+
+ html{
+
+     scroll-behavior: smooth;
+ }
+
+ body{
+     font-family: "Roboto", sans-serif;
+     color: #1c1c1c;
+ }
+
+ h1, h2, h3 {
+
+     font-family: "Asap", sans-serif;
+     color: rgb(224, 187, 91);
+     text-align: center;
+     padding-top: 4%;
+
+ }
+
+ p{
+     /* color: #fff; */
+
+     color: #fff;
+     padding: 2%;
+     text-indent: 1.8rem;
+ }
+
+ /* HEADER */
+
+ header {
+    background: linear-gradient(#0000001e, #0000004f), url("https://i.ytimg.com/vi/iqNVOod_q-E/maxresdefault.jpg") no-repeat center;
+     height: 100vh;
+ }
+
+ /* NAV */
+
+ header nav {
+
+     background-color: transparent;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 1rem;
+     position: fixed;
+     width: 100%;
+
+ }
+
+ /* Logo */
+
+ #logo {
+
+     width: 4rem;
+     height: 4rem;
+     overflow: hidden;
+     border-radius: 50%;
+
+ }
+
+ header nav #logo img {
+
+     width: 100%;
+
+ }
+
+ nav ul {
+
+     width: 70%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+ }
+
+ nav ul li a {
+
+     color: white;
+     font-weight: 500;
+     text-shadow: 1px 1px #000;
+
+ }
+
+ nav ul li a:hover {
+
+     color: goldenrod;
+     border-bottom: 1px solid;
+     text-shadow: 1px 1px #bfbec2;
+     transition: all 1s;
+
+ }
+
+ .hamburguer,
+ .close {
+
+     color: #fff;
+     font-size: 1.5rem;
+     cursor: pointer;
+     display: none;
+
+ }
+
+ /* TELAS MENORES (celular) MENU */
+
+ @media (max-width:768px) {
+
+     .hamburguer {
+         display: block;
+
+}
+
+     ul {
+
+         background-color: #002b0e;
+         position: absolute;
+         top: 0;
+         left: -10%;
+         height: 100vh;
+         width: 40vw !important;
+         flex-direction: column;
+         justify-content: space-around !important;
+
+     }
+
+ }
+
+ /* BANNER */
+
+ .bannerflex-center {
+
+     background: linear-gradient(#0000005d, #000),url("https://lh3.googleusercontent.com/bIMaK10q2lkvvc3OlllskdEkxeuWn5xe_6nN1ibc_vyrZM6gJlPI2vL1oPkpR3Vnicr9NZNSzvyIS-s=w2880-h1200-p-l90-rj") center no-repeat; 
+
+     height: 100%;
+     background-size: cover;
+     background-attachment: fixed;
+     color: #fff;
+     flex-direction: column;
+     display: flex;
+     justify-content:space-around;
+     padding: 1.25rem;
+    align-items: center;
+}
+
+.banner h1{
+
+    font-size: 2.5rem;
+    text-shadow: 2px 2px rgb(150, 108, 2) ;
+
+}
+
+.banner p{
+
+    font-size: 1.2rem;
+
+}
+
+.botao{
+
+    background: #002b0e;
+    color: #fff;
+    padding: .8rem 1.8rem;
+    font-size: .8rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px;
+}
+
+/* SOBRE */
+
+#sobre{
+
+    background: linear-gradient(#00000071, #000000c4), url("https://i.ytimg.com/vi/jZFzE1Lw6tM/mqdefault.jpg") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#botao_destaque{
+
+    background: #6541da;
+    box-shadow: 2px 2px #c5b20b;
+}
+
+#sobre p{
+
+    color: #fff;
+    background-color: #012b193f;
+    width: 80%;
+    padding: 2rem;
+    border-radius: 5vh;
+}
+
+.flex-center{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* SERVIÇOS */
+
+#servicos{
+
+    background: linear-gradient(#00000071, #000000c4), url("https://professorrafaelporcari.files.wordpress.com/2021/03/exfvv3mweaizkn1.png") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2rem;
+
+}
+
+#conteudos_servicos{
+
+    background-color: rgba(218, 165, 32, 0.151);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem 0;
+    gap: 2rem;
+
+}
+
+#conteudos_servicos div{
+
+    background-color: rgb(0, 0, 0);
+    max-width: 350px;
+    text-align: center;
+    padding: 1rem;
+    
+}
+
+#conteudos_servicos img{
+
+    width: 60px;
+
+}
+
+/* Fotos */
+
+#fotos{
+
+    background: linear-gradient(#00000071, #000000c4), url("https://i.kym-cdn.com/photos/images/original/002/559/383/942.jpg") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#fotos div{
+
+    background: #00000044;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#fotos img{
+
+    max-width: 350px;
+    height: 200px;
+    margin: 1rem;
+    
+}
+
+/* FOOTER */
+
+footer{
+
+    background: linear-gradient(#00000071, #000000c4);
+    height: 40vh;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+/* CONTATOS */
+
+#contatos{
+
+    background-color: #000;
+    margin: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+
+}
+
+.contatos_card{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2%;
+
+}
+
+.contatos_card img{
+
+    margin-right: 2%;
+    width: 6%;
+
+}
+
+.contatos_card a{
+
+    color: #fff;
+
+}
+
+body{
+    background-color: #000;
+}
